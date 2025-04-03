@@ -1,0 +1,386 @@
+Eidgenössisches Departement des Innern EDI
+Bundesamt für Sozialversicherungen BSV
+
+Hintergrunddokument
+
+FR / IT
+
+AHV 21: Die Abstimmungsvorlage
+Im Rahmen von:
+
+Volksabstimmung vom 25.9.2022 über die Stabilisierung der AHV (AHV 21)
+Datum:
+
+13.6.2022
+
+Stand:
+
+Die Abstimmungsvorlage
+
+Themengebiet:
+
+AHV
+
+Am 25. September 2022 stimmt die Schweizer Bevölkerung über die Stabilisierung der AHV (AHV 21)
+ab. Die Reform beinhaltet eine Änderung des AHV-Gesetzes und des Bundesbeschlusses über die
+Zusatzfinanzierung der AHV durch eine Erhöhung der Mehrwertsteuer.
+Die Reform hat zum Ziel, die Finanzen der AHV bis 2030 zu sichern sowie das Niveau der
+Rentenleistungen zu erhalten. Die vorgesehenen Massnahmen sehen eine Vereinheitlichung des
+Referenzalters von Frauen und Männern bei 65 Jahren sowie eine Flexibilisierung des Altersrücktritts
+und die Erhöhung der Mehrwertsteuer (MWST) vor. Diese Hintergrundinformation gibt einen Überblick
+über die Massnahmen.
+Referenzalter
+
+Vereinheitlichung des Rentenalters (Referenzalters) von Frauen und Männern
+Heutige Regelung
+Rentenalter von 64 Jahren für Frauen und 65 Jahren für Männer.
+AHV 21
+•
+Begriffsänderung: Statt ordentliches Rentenalter neu Referenzalter
+•
+Vereinheitlichung des Referenzalters von Frauen und Männern auf 65 Jahre in der AHV
+und in der beruflichen Vorsorge.
+Die Erhöhung des Referenzalters der Frauen von 64 auf 65 Jahre beginnt ein Jahr nach
+Inkrafttreten der Reform und erfolgt schrittweise um jeweils drei Monate pro Jahr. Bei
+Inkrafttreten der AHV 21 im Jahr 2024 würde für Frauen und Männer somit ab 2028 ein
+einheitliches Referenzalter von 65 Jahren gelten.
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Einsparungen für die AHV durch Erhöhung des Referenzalters der Frauen
+• Mehreinnahmen für die AHV durch Verlängerung der Beitragspflicht
+
+Ausgleich für
+Frauen
+
+1206
+207
+
+Ausgleichsmassnahmen für Frauen der Übergangsgeneration
+Die Reform AHV 21 sieht zwei Massnahmen vor, um die Erhöhung des Referenzalters für
+Frauen abzufedern, die bei Inkrafttreten der Reform kurz vor der Pensionierung stehen. Die
+Übergangsgeneration umfasst 9 Jahrgänge und betrifft Frauen, die bei Inkrafttreten der Reform
+55 Jahre oder älter sind.
+Tritt die AHV 21 im Jahr 2024 in Kraft, gehören die Jahrgänge 1961 bis 1969 zur
+Übergangsgeneration.
+
+1/5
+
+AHV 21
+•
+Lebenslanger Rentenzuschlag für die Frauen der Übergangsgeneration, die ihre
+Altersrente nicht vorbeziehen.
+o Der Grundzuschlag beträgt:
+Fr. 160 für tiefere durchschnittliche Jahreseinkommen (DJE)
+(≤ Fr. 57 3601)
+Fr. 100 für mittlere durchschnittliche Jahreseinkommen (DJE)
+(Fr. 57'361–Fr. 71 7001)
+Fr. 50 für höhere durchschnittliche Jahreseinkommen (DJE)
+(≥ Fr. 71 7011)
+o Der individuelle Rentenzuschlag wird nach Jahrgang abgestuft (siehe Tabelle
+unten).
+o Der Rentenzuschlag erfolgt ausserhalb des Rentensystems. Er unterliegt somit
+nicht der Plafonierung der Altersrente von Ehepaaren und wird über die
+Maximalrente hinaus ausbezahlt.
+o Der Rentenzuschlag für Frauen der Übergangsgeneration hat keine Kürzungen
+der EL zur Folge.
+
+•
+
+Geburtsjahr
+
+Referenzalter
+(bei Inkrafttreten 2024)
+
+AHV-Rentenzuschlag / Monat
+(in % des Grundzuschlags)
+
+1961
+1962
+
+64 + 3 Monate
+64 + 6 Monate
+
+25 %
+50 %
+
+1963
+1964
+
+64 + 9 Monate
+65 Jahre
+
+75 %
+100 %
+
+1965
+1966
+
+65 Jahre
+65 Jahre
+
+100 %
+
+1967
+1968
+
+65 Jahre
+65 Jahre
+
+63 %
+44 %
+
+1969
+
+65 Jahre
+
+25 %
+
+81 %
+
+Tiefere Kürzungssätze für Frauen der Übergangsgeneration, die ihre Altersrente
+vorbeziehen.
+Vorbezug
+im Alter
+von
+
+Kürzungssätze für Frauen der Übergangsgeneration
+durchschnittliches
+
+durchschnittliches
+
+durchschnittliches
+
+Jahreseinkommen
+
+Jahreseinkommen
+
+Jahreseinkommen
+
+≤ 57 3601
+
+57 361 – 71 7001
+
+≥ 71 7011
+
+Versicherungstechnische
+Kürzungssätze2
+
+64 Jahren
+
+0%
+
+2,5%
+
+3,5%
+
+4,0%
+
+63 Jahren
+
+2%
+
+4,5%
+
+6,5%
+
+7,7%
+
+62 Jahren
+
+3%
+
+6,5%
+
+10,5%
+
+11,1%
+
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Mehrausgaben für die AHV
+• Weniger Einnahmen für die AHV
+
+503
+-105
+
+1
+
+Gemäss Rententabelle 2022
+Diese neuen versicherungstechnischen Kürzungssätze, die sowohl für Frauen nach der Übergangsphase, als auch für Männer
+gelten werden, sind noch nicht definitiv. Sie basieren auf den heutigen Datengrundlagen und könnten bis zum Inkrafttreten der
+Reform noch angepasst werden. Sie dienen hier nur zum Vergleich mit den Kürzungssätzen für die Übergangsgeneration. Die
+neuen Erhöhungs- und Kürzungssätze sowie die erleichterten Sätze für geringe Einkommen werden erst kurz vor deren Einführung,
+frühestens im Jahr 2027, festgesetzt (siehe Seite 3). Bis dahin gelten weiterhin die aktuellen Sätze (im Jahr 2022: 6,8 % für ein
+Jahr Vorbezug und 13,6 % für zwei Jahre Vorbezug).
+2
+
+2/5
+
+Flexibilisierung
+
+Flexibler Rentenbezug in der AHV
+Heutige Regelung
+Männer und Frauen können ihre Altersrente um maximal zwei Jahre vorbeziehen. Es können
+lediglich ganze Jahre (12 Monate) vorbezogen werden. Der Rentenvorbezug führt zu einer
+versicherungstechnischen Rentenkürzung von 6,8 Prozent pro vorbezogenem Jahr.
+Die Rente kann um maximal fünf Jahre aufgeschoben werden. Durch den Rentenaufschub
+besteht Anspruch auf einen Zuschlag, dessen Höhe von der Dauer des Aufschubs abhängt
+(5,2 % bis 31,5 %).
+AHV 21
+•
+Möglichkeit für Frauen und Männer, die Altersrente zwischen 63 und 70 Jahren zu
+beziehen;
+für Frauen der Übergangsgeneration bereits ab 62 Jahren.
+•
+Einführung des Teilrentenvorbezugs und des Teilrentenaufschubs.
+•
+Kürzungen bei Vorbezug und Zuschläge bei Aufschub an die durchschnittliche
+Lebenserwartung angepasst und entsprechend gesenkt. Tiefere Kürzungen für tiefe
+durchschnittliche Jahreseinkommen (≤ 57’3603). Inkrafttreten dieses Punktes frühestens im
+Jahr 2027. Der Bundesrat legt die neuen Sätze kurz vor deren Einführung fest.
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Mehrausgaben für die AHV durch tiefere Kürzung bei Vorbezug
+
+98
+5
+
+• Einsparungen für die AHV durch Reduktion des Zuschlags bei Aufschub
+
+Arbeit nach 65
+
+Anreize zur Weiterführung der Erwerbstätigkeit nach 65
+Heutige Regelung
+Bei Ausübung einer Erwerbstätigkeit im Rentenalter gilt in der AHV ein Freibetrag von
+1400 Franken im Monat, bzw. 16 800 Franken im Jahr. Beiträge, die im Rentenalter bezahlt
+werden, führen aber nicht zu einer höheren Altersrente.
+AHV 21
+•
+Möglicher Verzicht auf Freibetrag für Erwerbstätige im Rentenalter;
+•
+Berücksichtigung der nach dem Referenzalter (65 Jahre) bezahlten AHV-Beiträge.
+• mögliche Schliessung von Beitragslücken
+• Verbesserung der AHV-Rente (bis zur maximalen Rente)
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Mögliche Mehreinnahmen für die AHV infolge Verzicht auf Freibetrag
+• Mehrausgaben für die AHV durch Rentenwirksamkeit von Beiträgen nach
+Referenzalter
+
+Hilflosenentschädigung
+
+107
+80
+
+Verkürzung der Karenzfrist für den Anspruch auf Hilflosenentschädigung der
+AHV
+Bisherige Regelung
+Die AHV richtet eine Hilflosenentschädigung für Personen im Rentenalter aus, die für
+alltägliche Lebensverrichtungen (z. B. Ankleiden, Körperpflege, Essen) dauernd auf die Hilfe
+Dritter angewiesen sind. Wenn der Hilfebedarf ein Jahr lang bestanden hat (und weiter
+besteht), kann von einem dauernden Hilfebedarf gesprochen werden. Die einjährige Frist wird
+als Karenzfrist bezeichnet.
+AHV 21
+•
+Die Karenzfrist für den Anspruch auf eine Hilflosenentschädigung der AHV wird von einem
+Jahr auf sechs Monate verkürzt.
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Mehrausgaben für die AHV
+3
+
+81
+
+Gemäss Rententabelle 2022
+
+3/5
+
+Zusatzfinanzierung
+
+Zusatzfinanzierung durch die Mehrwertsteuer (Bundesbeschluss)
+Heutige Regelung
+Der normale Satz der Mehrwertsteuer (MWST) beträgt zurzeit 7,7 %. Der AHV fliesst ein
+Prozentpunkt der Mehrwertsteuer zum demografischen Ausgleich zu.
+AHV 21
+•
+Erhöhung der MWST um 0,4 Prozentpunkte für die AHV
+
+Normalsatz
+Reduzierter Satz
+Sondersatz für Beherbergung
+
+Proportionale Erhöhung
+
+MWST mit AHV21
+
+0,4
+0,1
+0,1
+
+8,1
+2,6
+3,8
+
+Die Zusatzfinanzierung ist in einem separaten Bundesbeschluss geregelt, der die Verfassung
+ändert, weshalb das Volk obligatorisch darüber abstimmen muss. Allerdings ist der
+Bundesbeschluss mit den im AHVG vorgesehenen Massnahmen verknüpft, gegen die ein
+Referendum zustande gekommen ist. Der Bundesbeschluss kann somit nur dann umgesetzt
+werden, wenn das Volk auch die Gesetzesänderung annimmt.
+Finanzielle Auswirkungen im Jahr 2032 (in Millionen Franken)
+• Mehreinnahmen für die AHV
+
+Auswirkungen auf
+die EL
+
+Finanzielle Auswirkungen auf die Ergänzungsleistungen
+• Einsparungen durch Vereinheitlichung des Referenzalters bei 65 Jahren
+davon Bund 30 Mio. Fr., Kantone 50 Mio. Fr.
+• Einsparungen durch Ausgleichsmassnahmen für Frauen
+davon Bund 13 Mio. Fr., Kantone 10 Mio. Fr.
+
+Fristen
+
+1488
+
+80
+23
+
+Abstimmungen und Inkrafttreten
+•
+
+•
+
+•
+
+•
+•
+
+Das Parlament hat die Reform AHV 21 am 17. Dezember 2021 verabschiedet. Im
+Nationalrat wurde die Gesetzesrevision (AHVG) mit 125 zu 67 Stimmen (1 Enthaltung) und
+der Bundesbeschluss über die Zusatzfinanzierung der AHV durch eine Erhöhung der
+Mehrwertsteuer mit 126 zu 40 Stimmen (27 Enthaltungen) angenommen. Der Ständerat
+hat das Gesetz mit 31 zu 12 Stimmen (0 Enthaltungen) und den Bundesbeschluss mit 43
+Stimmen ohne Gegenstimme angenommen.
+Der Bundesbeschluss unterliegt dem obligatorischen Referendum (Verfassungsänderung).
+Gegen die Änderung des AHV-Gesetzes wurde ein Referendum ergriffen, das am 29. April
+2022 offiziell zustande kam.
+Das Volk wird am 25. September 2022 über beide Vorlagen abstimmen. Für den
+Bundesbeschluss ist das doppelte Mehr von Volk und Ständen erforderlich; für die
+Gesetzesänderung das einfache Volksmehr.
+Der Bundesbeschluss und das Gesetz hängen voneinander ab, sie können nur gemeinsam
+in Kraft treten.
+Der Bundesrat bestimmt das Datum des Inkrafttretens im Anschluss an die Abstimmung.
+Bei Annahme kann die Reform voraussichtlich am 1. Januar 2024 in Kraft treten.
+
+Sprachversionen dieses Dokuments:
+AVS 21 : Le projet soumis en votation
+AVS 21: il progetto di riforma in votazione
+
+4/5
+
+Ergänzende Dokumente des BSV
+www.bsv.admin.ch > Sozialversicherungen > AHV > Reformen & Revisionen > Stabilisierung der AHV (AHV 21)
+Stabilisierung der AHV (AHV 21) (admin.ch)
+
+Kontakt
+Bundesamt für Sozialversicherungen BSV
+Kommunikation
++41 58 462 77 11
+kommunikation@bsv.admin.ch
+
+5/5

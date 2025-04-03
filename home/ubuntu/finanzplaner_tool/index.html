@@ -1,0 +1,100 @@
+                            <option value="BL">Basel-Landschaft</option>
+                            <option value="BS">Basel-Stadt</option>
+                            <option value="FR">Freiburg</option>
+                            <option value="GE">Genf</option>
+                            <option value="GL">Glarus</option>
+                            <option value="GR">Graubünden</option>
+                            <option value="JU">Jura</option>
+                            <option value="LU">Luzern</option>
+                            <option value="NE">Neuenburg</option>
+                            <option value="NW">Nidwalden</option>
+                            <option value="OW">Obwalden</option>
+                            <option value="SG">St. Gallen</option>
+                            <option value="SH">Schaffhausen</option>
+                            <option value="SO">Solothurn</option>
+                            <option value="SZ">Schwyz</option>
+                            <option value="TG">Thurgau</option>
+                            <option value="TI">Tessin</option>
+                            <option value="UR">Uri</option>
+                            <option value="VD">Waadt</option>
+                            <option value="VS">Wallis</option>
+                            <option value="ZG">Zug</option>
+                            <option value="ZH">Zürich</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefon</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="goals">Ziele und Wünsche</label>
+                    <textarea id="goals" name="goals" rows="4"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-intro\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Speichern und weiter</button>
+                </div>
+            </form>
+            
+            <div id="customer-profile-summary" class="summary-box" style="display: none;"></div>
+        </section>
+
+        <!-- Ist-Analyse -->
+        <section id="section-current-situation" class="section hidden">
+            <h2>Ist-Analyse</h2>
+            <p>Erfassen Sie hier die aktuelle finanzielle Situation des Kunden.</p>
+            
+            <form id="form-current-situation">
+                <h3>Einkommen</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="salary">Jahresgehalt (brutto)</label>
+                        <input type="number" id="salary" name="salary" min="0" step="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bonuses">Boni und Zulagen</label>
+                        <input type="number" id="bonuses" name="bonuses" min="0" step="1000" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="rental-income">Mieteinnahmen</label>
+                        <input type="number" id="rental-income" name="rental-income" min="0" step="1000" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="investment-income">Kapitalerträge</label>
+                        <input type="number" id="investment-income" name="investment-income" min="0" step="1000" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="other-income">Sonstige Einnahmen</label>
+                        <input type="number" id="other-income" name="other-income" min="0" step="1000" value="0">
+                    </div>
+                </div>
+                
+                <h3>Ausgaben</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="housing-expenses">Wohnkosten (jährlich)</label>
+                        <input type="number" id="housing-expenses" name="housing-expenses" min="0" step="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="insurance-expenses">Versicherungen (jährlich)</label>
+                        <input type="number" id="insurance-expenses" name="insurance-expenses" min="0" step="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="transportation-expenses">Transportkosten (jährlich)</label>
+                        <input type="number" id="transportation-expenses" name="transportation-expenses" min="0" step="1000" required>
+                    </div>

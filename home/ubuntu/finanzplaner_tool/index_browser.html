@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzplaner-Tool</title>
+    <style>
+        /* Basic styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .nav {
+            display: flex;
+            background-color: #f0f0f0;
+            margin-bottom: 20px;
+            overflow-x: auto;
+        }
+        
+        .nav-link {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #333;
+            cursor: pointer;
+        }
+        
+        .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }
+        
+        .section {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            background-color: #fff;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        input.invalid {
+            border-color: red;
+        }
+        
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .btn-secondary {
+            background-color: #6c757d;
+        }
+        
+        .form-actions {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        
+        .summary-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+        
+        /* Toggle switch styling */
+        .toggle-switch {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        .toggle-switch input[type="checkbox"] {
+            width: auto;
+            margin-right: 10px;
+        }
+        
+        /* Chart containers styling */
+        .chart-container {
+            position: relative;
+            margin: 20px 0;
+            height: 300px;
+        }
+        
+        .small-chart-container {
+            position: relative;
+            margin: 20px 0;
+            height: 200px;
+            width: 48%;
+            display: inline-block;
+        }
+        
+        .chart-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: space-between;
+        }
+        
+        .gauge-container {
+            position: relative;
+            margin: 20px 0;
+            height: 150px;
+            width: 300px;
+        }
+        
+        @media print {
+            .chart-container, .small-chart-container, .gauge-container {
+                break-inside: avoid;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Finanzplaner-Tool</h1>
+    
+    <!-- Data management and AHV toggle -->
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+        <!-- AHV toggle -->
+        <div class="toggle-switch">
+            <input type="checkbox" id="toggle-13-ahv" checked>
+            <label id="toggle-13-ahv-label" for="toggle-13-ahv">13. AHV-Rente einbeziehen (ab 2026)</label>
+            <div id="toggle-13-ahv-info" class="info">
+                Die 13. AHV-Rente wird in den Berechnungen berücksichtigt. Diese wird ab 2026 ausbezahlt.
+            </div>
+        </div>
+        
+        <!-- Data management -->
+        <div class="data-management">
+            <button id="clear-data-btn" class="btn btn-secondary">Alle Daten löschen</button>
+        </div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="nav">
+        <a class="nav-link" data-target="section-intro">Einführung</a>
+        <a class="nav-link" data-target="section-customer-profile">Kundenprofil</a>
+        <a class="nav-link" data-target="section-current-situation">Ist-Analyse</a>
+        <a class="nav-link" data-target="section-retirement-planning">Vorsorgeplanung</a>
+        <a class="nav-link" data-target="section-tax-optimization">Steueroptimierung</a>
+        <a class="nav-link" data-target="section-investment-concept">Anlagekonzept</a>
+        <a class="nav-link" data-target="section-real-estate">Immobilienfinanzierung</a>
+        <a class="nav-link" data-target="section-estate-planning">Nachlassplanung</a>
+        <a class="nav-link" data-target="section-action-plan">Maßnahmenplan</a>
+    </nav>
+    
+    <!-- Sections -->
+    <main>
+        <!-- Intro Section -->
+        <section id="section-intro" class="section">
+            <h2>Einführung in das Finanzplaner-Tool</h2>
+            <p>Willkommen zum Finanzplaner-Tool für die Vorbereitung auf die Finanzplaner-Prüfung mit eidgenössischem Fachausweis im Juni 2025.</p>
+            <p>Dieses Tool unterstützt Sie bei der systematischen Finanzplanung und berücksichtigt die wichtigsten Aspekte der Prüfung:</p>
+            <ul>
+                <li>Kundenprofil</li>
+                <li>Ist-Analyse</li>
+                <li>Vorsorgeplanung (inkl. 13. AHV-Rente ab 2026)</li>
+                <li>Steueroptimierung</li>
+                <li>Anlagekonzept</li>
+                <li>Immobilienfinanzierung</li>
+                <li>Nachlassplanung</li>
+                <li>Maßnahmenplan</li>
+            </ul>
+            <p>Beginnen Sie mit dem Ausfüllen des Kundenprofils:</p>
+            <button class="btn" onclick="document.querySelector('[data-target=\'section-customer-profile\']').click()">Zum Kundenprofil</button>
+        </section>
+        
+        <!-- Customer Profile Section -->
+        <section id="section-customer-profile" class="section hidden">
+            <h2>Kundenprofil</h2>
+            <p>Erfassen Sie hier die persönlichen Daten des Kunden.</p>
+            
+            <form id="form-customer-profile">
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="first-name">Vorname</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="last-name">Nachname</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birth-date">Geburtsdatum</label>
+                        <input type="text" id="birth-date" name="birth-date" placeholder="DD.MM.YYYY" required data-type="date">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="marital-status">Zivilstand</label>
+                        <select id="marital-status" name="marital-status" required>
+                            <option value="">Bitte wählen</option>
+                            <option value="single">Ledig</option>
+                            <option value="married">Verheiratet</option>
+                            <option value="divorced">Geschieden</option>
+                            <option value="widowed">Verwitwet</option>
+                            <option value="registered-partnership">Eingetragene Partnerschaft</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="children">Anzahl Kinder</label>
+                        <input type="number" id="children" name="children" min="0" value="0">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-intro\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Speichern und weiter</button>
+                </div>
+            </form>
+            
+            <div id="customer-profile-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Current Situation Section -->
+        <section id="section-current-situation" class="section hidden">
+            <h2>Ist-Analyse</h2>
+            <p>Erfassen Sie hier die aktuelle finanzielle Situation des Kunden.</p>
+            
+            <form id="form-current-situation">
+                <h3>Einkommen</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="salary">Jahresgehalt (brutto)</label>
+                        <input type="number" id="salary" name="salary" min="0" step="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="bonuses">Boni und Zulagen</label>
+                        <input type="number" id="bonuses" name="bonuses" min="0" step="1000" value="0">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-customer-profile\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Speichern und weiter</button>
+                </div>
+            </form>
+            
+            <div id="current-situation-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Retirement Planning Section -->
+        <section id="section-retirement-planning" class="section hidden">
+            <h2>Vorsorgeplanung</h2>
+            <p>Erfassen Sie hier die Informationen zur Vorsorgeplanung des Kunden.</p>
+            
+            <form id="form-retirement-planning">
+                <h3>Ruhestandsplanung</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="retirement-age">Geplantes Pensionierungsalter</label>
+                        <input type="number" id="retirement-age" name="retirement-age" min="58" max="70" value="65" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="average-income">Durchschnittliches Einkommen für AHV-Berechnung</label>
+                        <input type="number" id="average-income" name="average-income" min="0" step="1000" required>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-current-situation\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Berechnen und weiter</button>
+                </div>
+            </form>
+            
+            <div id="retirement-planning-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Tax Optimization Section -->
+        <section id="section-tax-optimization" class="section hidden">
+            <h2>Steueroptimierung</h2>
+            <p>Erfassen Sie hier die Informationen zur Steueroptimierung.</p>
+            
+            <form id="form-tax-optimization">
+                <h3>Steuersituation</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="tax-income">Steuerbares Einkommen</label>
+                        <input type="number" id="tax-income" name="tax-income" min="0" step="1000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tax-pension-purchase-potential">Einkaufspotenzial Pensionskasse</label>
+                        <input type="number" id="tax-pension-purchase-potential" name="tax-pension-purchase-potential" min="0" step="1000" value="0">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tax-pillar3a-contribution">Säule 3a Einzahlung</label>
+                        <input type="number" id="tax-pillar3a-contribution" name="tax-pillar3a-contribution" min="0" max="7258" step="100" value="7258">
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-retirement-planning\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Berechnen und weiter</button>
+                </div>
+            </form>
+            
+            <div id="tax-optimization-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Investment Concept Section -->
+        <section id="section-investment-concept" class="section hidden">
+            <h2>Anlagekonzept</h2>
+            <p>Erfassen Sie hier die Informationen zum Anlagekonzept des Kunden.</p>
+            
+            <form id="form-investment-concept">
+                <h3>Risikoprofil</h3>
+                <div class="form-group">
+                    <label for="risk-profile">Risikoprofil des Kunden</label>
+                    <select id="risk-profile" name="risk-profile" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="konservativ">Konservativ</option>
+                        <option value="ausgewogen">Ausgewogen</option>
+                        <option value="wachstumsorientiert">Wachstumsorientiert</option>
+                        <option value="chancenorientiert">Chancenorientiert</option>
+                    </select>
+                </div>
+                
+                <h3>Anlagevermögen</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="investment-amount">Anlagevermögen (CHF)</label>
+                        <input type="number" id="investment-amount" name="investment-amount" min="0" step="10000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="investment-horizon">Anlagehorizont (Jahre)</label>
+                        <input type="number" id="investment-horizon" name="investment-horizon" min="1" max="40" value="10" required>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-tax-optimization\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Berechnen und weiter</button>
+                </div>
+            </form>
+            
+            <div id="investment-concept-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Real Estate Section -->
+        <section id="section-real-estate" class="section hidden">
+            <h2>Immobilienfinanzierung</h2>
+            <p>Erfassen Sie hier die Informationen zur Immobilienfinanzierung.</p>
+            
+            <form id="form-real-estate">
+                <h3>Immobilie</h3>
+                <div class="grid">
+                    <div class="form-group">
+                        <label for="property-value">Immobilienwert (CHF)</label>
+                        <input type="number" id="property-value" name="property-value" min="0" step="10000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mortgage-amount">Hypothekarbetrag (CHF)</label>
+                        <input type="number" id="mortgage-amount" name="mortgage-amount" min="0" step="10000" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mortgage-interest-rate">Hypothekarzins (%)</label>
+                        <input type="number" id="mortgage-interest-rate" name="mortgage-interest-rate" min="0" max="10" step="0.05" value="1.5" required>
+                    </div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-investment-concept\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Berechnen und weiter</button>
+                </div>
+            </form>
+            
+            <div id="real-estate-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Estate Planning Section -->
+        <section id="section-estate-planning" class="section hidden">
+            <h2>Nachlassplanung</h2>
+            <p>Erfassen Sie hier die Informationen zur Nachlassplanung.</p>
+            
+            <form id="form-estate-planning">
+                <h3>Nachlasssituation</h3>
+                <div class="form-group">
+                    <label for="has-will">Testament vorhanden?</label>
+                    <select id="has-will" name="has-will" required>
+                        <option value="">Bitte wählen</option>
+                        <option value="yes">Ja</option>
+                        <option value="no">Nein</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="has-marriage-contract">Ehevertrag vorhanden?</label>
+                    <select id="has-marriage-contract" name="has-marriage-contract">
+                        <option value="">Bitte wählen</option>
+                        <option value="yes">Ja</option>
+                        <option value="no">Nein</option>
+                        <option value="na">Nicht anwendbar</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="estate-notes">Anmerkungen zur Nachlassplanung</label>
+                    <textarea id="estate-notes" name="estate-notes" rows="4"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-real-estate\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Speichern und weiter</button>
+                </div>
+            </form>
+            
+            <div id="estate-planning-summary" class="summary-box" style="display: none;"></div>
+        </section>
+        
+        <!-- Action Plan Section -->
+        <section id="section-action-plan" class="section hidden">
+            <h2>Maßnahmenplan</h2>
+            <p>Hier erstellen Sie einen Maßnahmenplan für den Kunden.</p>
+            
+            <form id="form-action-plan">
+                <h3>Maßnahmen</h3>
+                <div class="form-group">
+                    <label for="short-term-actions">Kurzfristige Maßnahmen</label>
+                    <textarea id="short-term-actions" name="short-term-actions" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="medium-term-actions">Mittelfristige Maßnahmen</label>
+                    <textarea id="medium-term-actions" name="medium-term-actions" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="long-term-actions">Langfristige Maßnahmen</label>
+                    <textarea id="long-term-actions" name="long-term-actions" rows="3"></textarea>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="button" class="btn btn-secondary" onclick="document.querySelector('[data-target=\'section-estate-planning\']').click()">Zurück</button>
+                    <button type="submit" class="btn">Finanzplan erstellen</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <!-- Load JavaScript files -->
+    <script>
+        // Initialize the global namespace
+        window.FinanzplanerModules = {};
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calculations_browser.js"></script>
+    <script src="ui_browser.js"></script>
+</body>
+</html>

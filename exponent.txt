@@ -1,0 +1,147 @@
+# Finanzplaner-Tool Codebase Overview
+
+## Project Architecture Overview
+
+The Finanzplaner-Tool is a comprehensive web-based financial planning application specifically designed to prepare for the Swiss "Finanzplaner mit eidgenössischem Fachausweis" examination in June 2025. The application features a client-side architecture with HTML for structure, CSS for styling, and JavaScript for calculations and interactivity. The tool follows a modular approach with separate components for different aspects of financial planning.
+
+A key feature of the application is the ability to toggle calculations with or without the "13. AHV-Rente" (13th AHV pension), which will be introduced in Switzerland from 2026 onwards.
+
+## Core Libraries and Frameworks
+
+The application is built using standard web technologies:
+- HTML5 for structure and forms
+- CSS3 for styling and responsive design
+- Vanilla JavaScript for calculations and UI interactions
+- No external JavaScript frameworks appear to be used, keeping the application lightweight
+- Some custom calculation modules that function similar to libraries
+
+## Main Directories and Their Purposes
+
+The project is organized into the following directory structure:
+
+1. `/home/ubuntu/finanzplaner_tool/` - Main application directory containing all code
+   - Root directory contains core HTML, JavaScript, and documentation files
+   - `/analyse/` - Contains analysis documents and requirements
+     - `/pdf_extracts/` - Contains text extracts from relevant Swiss financial regulations and exam information
+
+## Important Files and Their Roles
+
+### Core Application Files:
+- `index.html` - Main entry point and user interface of the application
+- `ui.js` - Handles UI interactions, form validation, and navigation
+- `ui_updated.js` - Updated version of the UI handling
+
+### Calculation Modules:
+- `calculations.js` - Base calculation functions for financial planning
+- `calculations_updated.js`, `calculations_updated_fixed.js`, `calculations_updated_fixed2.js` - Iterative improvements to the calculations
+- `calculations_liquiditaetsplanung.js` - Liquidity planning calculations
+- `calculations_steueroptimierung.js` - Tax optimization calculations
+- `calculations_vermoegensallokation.js` - Asset allocation calculations
+- `excel_functions.js` - Utility functions that replicate Excel functionality
+- `test_calculations.js`, `test_calculations_fixed.js`, `test_calculations_fixed2.js` - Test files for calculation functions
+
+### Documentation Files:
+- `1_einfuehrung.md` through `10_dokumentation_checkliste.md` - Step-by-step documentation of the financial planning process
+- `benutzerhandbuch.md` - User manual for the application
+- `dokumentation.md` - Technical documentation of the application
+- `grundstruktur.md` - Outlines the basic structure of the guided financial planning tool
+- `datenfluss.md` - Documents the data flow within the application
+- `todo.md` - List of pending tasks and improvements
+
+### Analysis Files:
+- `/analyse/pruefungsanforderungen.md` - Examination requirements
+- `/analyse/kategorisierung.md` - Categorization of financial planning concepts
+- `/analyse/pensexpert_analyse.md` - Analysis related to pension expertise
+
+## Coding Patterns and Conventions
+
+1. **Modular JavaScript Architecture**:
+   - Separate files for different calculation domains
+   - Functions are grouped by financial planning domains (pension, tax, asset allocation)
+   - Module exports at the end of JS files for potential Node.js integration
+
+2. **Calculation Pattern**:
+   - Functions typically accept specific parameters and return structured objects with calculation results
+   - Heavy use of nested objects to organize related data
+   - Most calculation functions are pure functions with minimal side effects
+
+3. **UI Interaction Pattern**:
+   - Event-driven architecture for user interactions
+   - Form-based data collection with validation
+   - Local storage for preserving state between sessions
+   - Section-based navigation with show/hide mechanics
+
+4. **Documentation Style**:
+   - Markdown files for all documentation
+   - Step-by-step guides following the financial planning process
+   - Comprehensive documentation of calculations and assumptions
+
+5. **Naming Conventions**:
+   - German language variable and function names reflecting the Swiss context
+   - Descriptive naming for functions and variables
+   - Consistent camelCase for JavaScript identifiers
+
+## Build Process and Commands
+
+The application is designed to run directly in the browser without a complex build process:
+- No visible build tools or bundlers in the codebase
+- Static files are served directly to the browser
+- Local data storage is used instead of server-side persistence
+
+To run the application:
+1. Open `index.html` in a modern web browser
+2. Navigate through different sections using the menu
+3. Input required data in the forms
+4. Click "Berechnen" to display results
+5. Toggle the 13th AHV pension switch to compare different scenarios
+
+## Testing Framework and Patterns
+
+Testing appears to be handled through:
+- Dedicated test files (`test_calculations.js`, etc.)
+- Manual verification against expected values
+- Iterative improvements documented in successive file versions
+- No formal unit testing framework seems to be in use
+
+## Specific Challenges and Complexities
+
+1. **13th AHV Pension Implementation**:
+   - Special toggle to calculate scenarios with and without the 13th AHV pension
+   - Needs to adapt all pension and tax calculations accordingly
+
+2. **Swiss Financial Regulations**:
+   - Complex Swiss pension system with three pillars (AHV, occupational pension, private pension)
+   - Canton-specific tax calculations (optimized for Canton Bern)
+   - Detailed pension calculation rules based on Swiss law
+
+3. **Calculation Accuracy**:
+   - Known limitations in AHV pension calculations for married couples
+   - Simplified calculations that may differ from official values
+   - Balance between accuracy and usability for exam preparation
+
+4. **Multiple Tax Optimization Strategies**:
+   - Various tax optimization approaches need to be calculated and compared
+   - Multi-year planning for pension fund purchases
+   - Staggered withdrawals from pillar 3a accounts
+
+5. **Progressive Development**:
+   - Multiple versions of calculation files suggest iterative development and bug fixing
+   - Balance between technical accuracy and pedagogical clarity for exam preparation
+
+## Data Flow and State Management
+
+The application follows a client-side data flow pattern:
+1. User inputs data through forms in different sections
+2. Form data is validated client-side
+3. On form submission, data is processed by calculation modules
+4. Results are displayed in the UI and stored in browser's local storage
+5. Data can be accessed across different sections of the application
+
+## Examination Context
+
+This tool is specifically designed for preparing for the Swiss "Finanzplaner mit eidgenössischem Fachausweis" examination in June 2025. It focuses on:
+- Comprehensive financial planning according to Swiss standards
+- Integration of recent regulatory changes (13th AHV pension)
+- Accurate calculations based on 2025 values
+- Step-by-step guidance through the financial planning process
+- Clear documentation of calculation methods and assumptions
